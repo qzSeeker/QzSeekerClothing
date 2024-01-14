@@ -1,13 +1,9 @@
-import { useState } from 'react'
+import Layout from "./Components/LayOut/Layout";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <h1 className='text-3xl text-center text-blue-600 mt-4'>QzSeekerClothing</h1>
-    </>
-  )
+  return <>
+  {/* <Layout /> */}
+  </>;
 }
 
-export default App
+export default App;
