@@ -9,15 +9,15 @@ function Footer() {
           <div>
             <Link>
               <img
-                className="h-20 p-1"
-                src="src\assets\png\qzseeker-clothing-favicon-white.png"
+                className="h-40 p-1"
+                src="src\assets\qzseekerclothing-logo-zip-file\png\logo-white.png"
                 alt="logo"
               />
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-white uppercase">
+              <h2 className="mb-6 text-sm text-white uppercase">
                 Resources
               </h2>
               <ul className="text-gray-500 font-medium">
@@ -44,7 +44,7 @@ function Footer() {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-white uppercase">
+              <h2 className="mb-6 text-sm text-white uppercase">
                 Follow us
               </h2>
               <ul className="text-gray-500 font-medium">
@@ -66,7 +66,7 @@ function Footer() {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-white uppercase">
+              <h2 className="mb-6 text-sm text-white uppercase">
                 Legal
               </h2>
               <ul className="text-gray-500 font-medium">
