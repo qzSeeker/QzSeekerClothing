@@ -3,11 +3,17 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowDown,
+  faBars,
   faCartShopping,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
+
+  const menuBar = () => {
+    
+  }
+
   return (
     <>
       <div className="bg-black w-full">
@@ -17,17 +23,20 @@ function Header() {
         </h1>
       </div>
       <header className="shadow-lg sticky z-60 top-0">
-        <nav className="bg-ghost-white border-grey-200 px-4 lg:px-6 py-3.5">
+        <nav className="bg-white border-grey-200 px-4 lg:px-6 py-3.5">
+          <div className="absolute cursor-pointer sm:hidden">
+            <FontAwesomeIcon icon={faBars} onClick={menuBar}/>
+          </div>
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <Link>
               <img
-                className="h-6 p-1"
+                className="h-6 p-1 ml-8"
                 src="src\assets\qzseekerclothing-logo-zip-file\png\logo-no-background.png"
                 alt="logo"
               />
             </Link>
 
-            <div className="flex flex-wrap gap-6 uppercase">
+            <div className="flex-wrap gap-6 uppercase hidden sm:flex">
               <Link to="/" className="text-black text-sm tracking-widest">
                 Home
               </Link>
@@ -50,7 +59,7 @@ function Header() {
 
             <div className="flex items-center lg:order-2 gap-8 ">
               <Link to="/login">
-                <button className="text-black">Login</button>
+                <button className="text-black hidden md:block">Login</button>
               </Link>
               <div className="flex flex-wrap gap-3">
                 <Link to="/serach">

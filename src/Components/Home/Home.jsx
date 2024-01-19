@@ -2,11 +2,12 @@ import React from "react";
 
 function Home() {
   return (
-    <div>
-      <div className="flex columns-2">
+    <div className="container">
+      <div className="px-28 mt-10">
         <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
       </div>
       <div class="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">
+
         <div class="rounded-md border">
           <img
             src="https://images.unsplash.com/photo-1618453292459-53424b66bb6a?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -41,13 +42,16 @@ function Home() {
             <div class="mt-5 flex items-center space-x-2">
               <span class="block text-sm font-semibold">Size : </span>
               <span class="block cursor-pointer rounded-md border border-gray-300 p-1 px-2 text-xs font-medium">
-                8 UK
+                M
               </span>
               <span class="block cursor-pointer rounded-md border border-gray-300 p-1 px-2 text-xs font-medium">
-                9 UK
+                L
               </span>
               <span class="block cursor-pointer rounded-md border border-gray-300 p-1 px-2 text-xs font-medium">
-                10 UK
+                XL
+              </span>
+              <span class="block cursor-pointer rounded-md border border-gray-300 p-1 px-2 text-xs font-medium">
+                XXL
               </span>
             </div>
             <button
